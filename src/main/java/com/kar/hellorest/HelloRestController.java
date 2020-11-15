@@ -15,4 +15,9 @@ public class HelloRestController {
     public String hey(){
         return "Hey there!";
     }
+
+    @GetMapping("/hello_v2")
+    public String hello_v2(){
+        return "Hello World from v2";
+    }
 }
