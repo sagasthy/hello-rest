@@ -1,7 +1,5 @@
 package com.kar.hellorest.controller;
 
-import com.kar.hellorest.entity.Name;
-import com.kar.hellorest.repository.NameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +11,8 @@ import java.util.Optional;
 @RestController
 public class HelloRestController {
 
-    @Autowired
-    NameRepository nameRepository;
+//    @Autowired
+//    NameRepository nameRepository;
 
     @RequestMapping(value = {"/hello", "/hello{id}"}, method = RequestMethod.GET)
     public String hello(@PathVariable Optional<String> name){
